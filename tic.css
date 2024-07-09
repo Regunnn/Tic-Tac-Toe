@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f6c35c; /* Bright yellow background */
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.game-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3caea3; /* Teal title color */
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    background-color: #3bede1; /* Bright orange board background */
+    border: 2px solid #2a2a2a; /* Dark gray border */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Soft shadow */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #2a2a2a; /* Dark gray border */
+    background-color: #f7f7f7; /* Light gray cell background */
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #e0e0e0; /* Lighter gray on hover */
+}
+
+.game-info {
+    margin-top: 20px;
+}
+
+#game-result {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #0c0808; /* Reddish result text color */
+}
+
+#reset-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4cb5f5; /* Bright blue button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#reset-button:hover {
+    background-color: #2c8efa; /* Darker blue on hover */
+}
